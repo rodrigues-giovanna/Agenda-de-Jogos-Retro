@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Gaming Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="portal-box">
+        
+        <!-- Topo -->
+        <header class="hero">
+            <h1>RETRO GAMING CLUB</h1>
+            <p>Insira a ficha, encontre os melhores campeonatos clássicos e junte-se a nós!</p>
+            
+            <div class="hero-links">
+                <a href="#agenda">Ver Calendário</a>
+                <a href="#cadastro">Start / Inscrição</a>
+            </div>
+        </header>
+
+        <!-- Cards -->
+        <main class="main-container">
+            
+            <!-- Tabela de Campeonatos -->
+            <section id="agenda" class="card">
+                <h2>Calendário de Eventos</h2>
+                <p class="sub-card">Confira os próximos corujões e torneios da turma</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Torneio / Jogo</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>Street Fighter II (Fliperama)</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>Super Mario World (Speedrun)</td>
+                            <td>16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>Counter-Strike 1.6 (Corujão LAN)</td>
+                            <td>18:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Cadastro de Jogadores -->
+            <section id="cadastro" class="card">
+                <h2>Player Select!</h2>
+                <p class="sub-card">Preencha os dados para garantir sua vaga no lobby</p>
+                
+                <form action="#">
+                    <div class="form-row">
+                        <label for="nome">Nick / Nome:</label>
+                        <input type="text" id="nome" placeholder="Seu nome ou apelido" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="plataforma">Console Favorito:</label>
+                        <select id="plataforma" required>
+                            <option value="">Escolha uma plataforma</option>
+                            <option value="snes">Super Nintendo (SNES)</option>
+                            <option value="megadrive">Mega Drive</option>
+                            <option value="arcade">Fliperama / Arcade</option>
+                            <option value="ps1">PlayStation 1</option>
+                        </select>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="submit">subscribe</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
